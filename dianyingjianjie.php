@@ -105,8 +105,8 @@ class Dianyingjianjie{
 		}
 
 	function get_ali_peiyin($content) {
-		$AccessKeyID ="ACSQdRVyUt2BQryo";
-		$AccessKeySecret = "CsfAK8yUeS";		
+		$AccessKeyID ="阿里TTS";
+		$AccessKeySecret = "阿里TTS";		
 		//使用你的AccessKey ID和Access Key Secret初始化
 		AlibabaCloud::accessKeyClient($AccessKeyID, $AccessKeySecret)->regionId("cn-shanghai")->asDefaultClient();
 
@@ -127,9 +127,7 @@ class Dianyingjianjie{
 		$this->log("阿里TTS token：".$token);
 		//Get方式获取
 		$this->log("将简介转发为语音");
-		//https://nls-gateway.cn-shanghai.aliyuncs.com/stream/v1/tts?appkey=trUDdnGgzS68wobG&token=a597b4ed9af6491da227200f353fb44d&text=%E4%BB%8A%E5%A4%A9%E6%98%AF%E5%91%A8%E4%B8%80%EF%BC%8C%E5%A4%A9%E6%B0%94%E6%8C%BA%E5%A5%BD%E7%9A%84%E3%80%82&format=wav&sample_rate=16000
-		//$token = "7c02d0c5b31a4460847165c1637e1d89";
-		$appkey = "trUDdnGgzS68wobG";
+		$appkey = "阿里TTS的appkey";
 		$text = urlencode($content);
 		$voice = "Aicheng";
 		$volume = 100;
